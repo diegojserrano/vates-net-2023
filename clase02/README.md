@@ -1,7 +1,4 @@
-# Clase 2: Estructuras condicionales y estructuras repetitivas
-
-
-## Clase 1:  Introducción. 
+## Clase 2: Estructuras condicionales y estructuras repetitivas
 
 ### Recursos
 * [Youtube](https://youtu.be/dVm1RgAXe_w)
