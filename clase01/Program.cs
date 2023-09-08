@@ -1,13 +1,24 @@
 ﻿
-Console.WriteLine("Hola mundo!");
+public class Principal {
 
-int x = 345;
-float precio = 234.345f;
+    public static void Main() {
 
-Console.WriteLine($"""
-            Estoy en
+        Console.Write("Ingrese su apellido: ");
+        string apellido = Console.ReadLine();
+        Console.WriteLine($"Hola {apellido}!");
 
-            |{x,-17:C}|
-            la clase\n 1.....
-            {precio,8:C}
-            """);
+        int x = 34523432;
+        float precio = 234.345f;
+
+        Console.WriteLine($"""
+                    Estoy en
+
+                    |{x,-17:N0}|
+                    la clase\n 1.....
+                    {precio,8:C}
+                    """);
+        string? nombre = null;
+        Console.WriteLine(nombre??"No indicado");
+        Console.WriteLine(nombre?.Length);
+    }
+}
