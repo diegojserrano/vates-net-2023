@@ -9,5 +9,8 @@
 ## Clases
 
 * Clase 1: [Introducción](./clase01)
+* Clase 2: [Estructuras condicionales y repetitivas](./clase02)
+* Clase 3: [Programación orientada a objetos](./clase03)
+* Clase 4: [Métodos, referencias y enum](./clase04)
 
 

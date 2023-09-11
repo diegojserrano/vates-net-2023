@@ -1,10 +1,5 @@
 ## Clase 1:  Introducción. 
 
-### Recursos
-* [Youtube](https://www.youtube.com/watch?v=WG2Gx_FVTEI)
-
-* [Resumen](https://xmind.app/m/fVqAMK)
-
 ### Contenido
 
 * Instalación. 

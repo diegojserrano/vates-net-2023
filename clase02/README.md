@@ -1,10 +1,5 @@
 ## Clase 2: Estructuras condicionales y estructuras repetitivas
 
-### Recursos
-* [Youtube](https://youtu.be/dVm1RgAXe_w)
-
-* [Resumen]
-
 ### Contenido
 * Programación estructurada.
 * Estructuras condicionales: if, else, else if, switch.

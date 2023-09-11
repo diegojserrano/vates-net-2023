@@ -1,11 +1,11 @@
 namespace Clase03 {
 
-public class Persona(int documento) {
+public class Persona {
 
     // Atributos
     // Propiedades
     public int Documento { get; init; }
-    public string Nombre { get; set; } = "No especificado"
+    public string Nombre { get; set; } = "No especificado";
     public string Apellido { get; set; }
     public int Nacimiento { get; set; }
 
