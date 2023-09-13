@@ -11,53 +11,27 @@
 
 ### Ejercicios
 
-* Crear una clase Persona con atributos para guardar documento, nombre, apellido y edad. Ingresar por teclado los datos de una serie de personas, al finalizar informar todos los datos de la persona de mayor edad. Si hay más de una con la misma mayor edad, informar la que aparezca al último en orden alfabético por apellido y nombre.
-
+Un hospital de nuestra ciudad necesita conocer cierta información respecto a los importes cobrados por las distintas atenciones que realiza,y requiere de un sistema orientado a objetos en Smalltalk que le dé soporte a ello. Los datos relevantes son los siguientes:
+* Del Hospital sólo interesa registrar la razón social; y una colección con todas las atenciones realizadas.
+* Cada atención tiene los siguientes datos: un código numérico que identifica a cada atención; y un valor numérico que representa el tipode cobro (1: “efectivo”; 2: “tarjeta de crédito”). Las atenciones pueden ser médicas o de farmacia:
+    * Una atención médica agrega los siguientes datos: el paciente atendido; y el importe de la consulta.
+    * Una atención de farmacia agregan los siguientes datos: el importe total de los medicamentos vendidos en dicha atención; y un cupón dedescuento que especifica el monto de descuento que se aplicaría sobre el importe total de los medicamentoss; en caso que el cupón dedescuento sea igual que 0, no se realizará ningún descuento; cabe aclarar que el cupón de descuento debe ser 0 o positivo.
+    * Del paciente asociado a la atención médica se registran: su nombre; el síntoma que prevalece (1: “corazon”, 2: “pulmon”, 3: “otras”); y unvalor booleano que representa si el paciente es habitual (true) o no (false) del hospital.
+De cada clase de atención se debe calcular un importeACobrar en pesos, que representa lo que el hospital cobra al paciente por la atenciónbrindada. Este cálculo dependerá del tipo de cobro de la atención y de la clase de atención brindada:
+* El importe total de las atenciones médicas se calcula a partir del importe de la consulta. En caso que el paciente sea “habitual” se leaplicará un descuento del 25%. Por último, si el tipo de cobro es igual a 2 (“tarjeta de crédito”) se le incrementa al anterior importe un20% más; en caso que el cobro sea igual a 1 (“efectivo”) se le realiza un descuento del 10% sobre el anterior importe.
+* El importe total de las atenciones de farmacia se calcula a partir del importe total de los medicamentos vendidos. Luego se le realiza eldescuento del cupón de descuento cuyo importe está especificado. Por último, si el tipo de cobro es igual a 2 (“tarjeta de crédito”) se leincrementa al anterior importe un 30% más; en caso que el cobro sea igual a 1 (“efectivo”) se le realiza un descuento del 5% sobre elanterior importe.
+Con lo expuesto anteriormente, usted deberá implementar:
+* Todas las clases del modelo presentado.
+* Los siguientes requerimientos de métodos:
+    * Para las clases Atención, Médica, Farmacia y Paciente implementar su constructor, acceso y modificación y toString.
+    * Para la clase Hospital implementar el método addAtención que agrega una atención a la colección.
+* Definir e implementar los métodos importeACobrar de las atenciones, que calcule y devuelva el importe a cobrar por la atención de acuerdo a los criterios anteriormente especificados.
+* En clase Hospital se requiere la implementación de los siguientes métodos:
+    * importeACobrarPromedioAtencionesMedicas - debe calcular y retornar el importe a cobrar promedio de todas las atenciones médicas realizadas.
+    * cantidadAtencionesConImporteACobrar(desde, hasta) - debe determinar y retornar la cantidad de atenciones médicas cuyo importe a cobrar esté comprendido entre dos valores que se reciben como parámetros.
+    * nombrePrimerPacienteDeOtroSintomaAtendido - debe retornar el nombre del primer paciente que corresponda a otros síntomas(es decir, cuyo código de síntoma sea igual a 3). En caso que no se haya realizado ninguna atención médica a ningún paciente de otros síntomas, se deberá informar con un mensaje.
 ### Tarea
 
-* Modificar el ejercicio de las personas para leerlas desde el archivo [personas.csv](./Personas/personas.csv).
-* Un ascensor posee una capacidad máxima de n personas y está
-    instalado en un edificio cuyos pisos se encuentran numerados. Se
-    necesita desarrollar una clase Ascensor que represente el
-    funcionamiento del mismo y que posea métodos para:
 
-    -   Desplazarse a un piso determinado
-    -   Subir personas
-    -   Bajar personas
-    -   Informar el piso donde se encuentra y la cantidad de personas
-        que hay adentro
-
-    Los métodos deben verificar que el estado siempre sea correcto:
-
-    -   Si se solicitar ir a un piso debe retornar verdadero si el piso
-        existe y falso si no. Por ejemplo, si el ascensor puede viajar
-        entre los pisos -2 y 10, debe retornar falso si le solicitan ir
-        a un piso fuera de ese rango.
-    -   Si la cantidad de personas que quieren subir supera la
-        capacidad, debe retornar la cantidad de personas que
-        efectivamente entren.
-    -   Si la cantidad de personas que quieren bajar supera a la
-        cantidad de personas que efectivamente hay adentro del ascensor,
-        debe retornar esa última cantidad, es decir, que todos salen.
-    -   Si para subir o bajar el método recibe una cantidad no válida,
-        debe retornar -1.
-    -   El método toString debe informar el piso en que se encuentra y
-        la cantidad de personas que hay adentro en ese momento.
-
-* Un partido de fútbol se juega entre dos equipos denominados local y visitante. Desarrollar una clase Partido
-que contenga referencias a dos objetos de la clase Equipo. La clase Partido debe poseer atributos para registrar
-ademas la cantidad de goles realizada por cada equipo y métodos para informar cuál es el ganador o si hubo empate. 
-Por otro lado, la clase Equipo debe poseer un método RegistrarPartido que reciba por parámetro un partido y asigne 
-atributos (almacenados o calculados) para informar:
-   * Cantidad de partidos jugados
-   * Cantidad de partidos jugados como local
-   * Cantidad de partidos jugados como visitante
-   * Suma de goles realizados
-   * Suma de goles recibidos
-   * Diferencia total de goles
-   * Cantidad de partidos ganados
-   * Cantidad de partidos empatados
-   * Cantidad de partidos recibidos
-   * Sumatoria de puntos (suponiendo que todos los partidos son de un mismo campeonato)
 
 
