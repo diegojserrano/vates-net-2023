@@ -14,6 +14,7 @@
 ### Tarea
 
 * Modificar el ejercicio de las personas para leerlas desde el archivo [personas.csv](./Personas/personas.csv).
+  
 * Un ascensor posee una capacidad máxima de n personas y está
     instalado en un edificio cuyos pisos se encuentran numerados. Se
     necesita desarrollar una clase Ascensor que represente el

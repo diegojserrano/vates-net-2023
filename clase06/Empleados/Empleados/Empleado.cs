@@ -1,5 +1,8 @@
+using System.Collections;
+using System.Runtime.CompilerServices;
+
 namespace Empleados {
-public abstract class Empleado
+public abstract class Empleado: IComparable
 {
     public int Legajo { get; set; }
 
@@ -16,5 +19,34 @@ public abstract class Empleado
 
     public override string ToString() => $"{Legajo,4} {Nombre,-20} {Basico:C2} {Neto():C2}";
 
+        // La interfaz exige retornar un entero:
+        // > 0 => this > obj
+        // = 0 => this == obj
+        // < 0 => this < obj
+        public int CompareTo(object? obj)
+        {
+            Empleado otro = obj as Empleado;
+            if (otro == null) return 1;
+            return (int)(this.Neto() - otro.Neto());
+        }
+    }
+
+
+
+    public class ComparadorLegajo : IComparer<Empleado>
+    {
+        public int Compare(Empleado? x, Empleado? y)
+        {
+            return x.Legajo - y.Legajo;
+        }
+    }
+
+    public class ComparadorNombre : IComparer<Empleado>
+{
+    public int Compare(Empleado? x, Empleado? y)
+    {
+        return x.Nombre.CompareTo(y.Nombre);
+    }
 }
+
 }

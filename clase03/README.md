@@ -18,8 +18,8 @@
 ### Tarea
 
 * Crear una clase o registro Punto que represente un punto en el plano, con métodos o atributos para calcular:
-  * Cuadrante (analizar si se puede diferencian si está sobre algún eje)
+  * Cuadrante (analizar si se puede diferenciar si está sobre algún eje)
   * Distancia al origen
   * Distancia a otro punto
 * Investigar que el cálculo del cuadrante retorne un enum
-*  
+  

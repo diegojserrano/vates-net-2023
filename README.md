@@ -13,5 +13,7 @@
 * Clase 3: [Programación orientada a objetos](./clase03)
 * Clase 4: [Métodos, referencias y enum](./clase04)
 * Clase 5: [Herencia, sobrecarga, sobrescritura](./clase05)
+* Clase 6: [Polimorfismo](./clase06)
+* Clase 7: [Interfaces](./clase07)
 
 
