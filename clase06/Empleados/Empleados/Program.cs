@@ -10,11 +10,13 @@ public class Programa {
         Empleado e2 = new Vendedor(92, "Otro vendedor", 200000, 10000000);
         Empleado e3 = new Administrativo(3, "Otro adm.", 200000, true);
         
-        List<Empleado> plantel = new List<Empleado>();
-        plantel.Add(e1);
-        plantel.Add(e2);
-        plantel.Add(e3);
-        plantel.Add(new Obrero(4, "Otro obrero", 200000, 21));
+        List<Empleado> plantel = new List<Empleado>
+        {
+            e1,
+            e2,
+            e3,
+            new Obrero(4, "Otro obrero", 200000, 21)
+        };
 
         plantel.Sort(new ComparadorNombre());
 

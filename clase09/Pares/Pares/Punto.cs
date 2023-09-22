@@ -1,0 +1,1 @@
+public record Punto(float X, float Y) {}

@@ -45,7 +45,7 @@ Una biblioteca necesita un software que le permita registrar los datos de los li
 
 Por otro lado, cada vez que un libro es prestado se registra el nombre del solicitante, la cantidad de días del préstamo y si fue devuelto o no. El conjunto de préstamos debe ser almacenado como un atributo del libro en cuestión.
 	
-Se necesita entonces un programa en Java que obtenga de dos archivos de texto los datos de los libros y sus préstamos y luego de finalizada la carga informe:
+Se necesita entonces un programa que obtenga de dos archivos de texto los datos de los libros y sus préstamos y luego de finalizada la carga informe:
 * Cantidad de libros en cada estado (tres totales)
 * Sumatoria del precio de reposición de todos los libros extraviados
 * Nombre de todos los solicitantes de un libro en particular identificado por su título
