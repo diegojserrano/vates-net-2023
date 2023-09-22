@@ -15,5 +15,5 @@
 * Clase 5: [Herencia, sobrecarga, sobrescritura](./clase05)
 * Clase 6: [Polimorfismo](./clase06)
 * Clase 7: [Interfaces](./clase07)
-
+* Clase 8: [Composición](./clase08)
 
