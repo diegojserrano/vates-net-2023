@@ -29,7 +29,7 @@ Se detallan las clases identificadas para el dominio bajo estudio.
 
 Se pide:
 * Leer el archivo csv AtencionesTienda.csv y AtencionesMedica.csv provisto y cargar todas las atenciones que hay en él.
-* Implementar las clases anteiormente descritas, con un método agregarAtención para la clase Veterinaria.
+* Implementar las clases anteriormente descritas, con un método agregarAtención para la clase Veterinaria.
 * Definir e implementar los métodos importeACobrar de las atenciones, que retornen el importe a cobrar por la atención según los siguientes criterios:
     * Para las atenciones médicas el importe total se calcula a partir del importe de la consulta. En caso que la mascota sea “habitual” se le aplicará un descuento del 25%. Por último, si el tipo de cobro es igual a 2 (“tarjeta de crédito”) se le incrementa al anterior importe un 20% más; en caso que el cobro sea igual a 1 (“efectivo”) se le realiza un descuento del 10% sobre el anterior importe.
     * Para las atenciones de la tienda el importe total se calcula a partir del importe total de los artículos vendidos. Luego se le realiza el descuento del bono de descuento cuyo importe está especificado. Por último, si el tipo de cobro es igual a 2 (“tarjeta de crédito”) se le incrementa al anterior importe un 30% más; en caso que el cobro sea igual a 1 (“efectivo”) se le realiza un descuento del 5% sobre el anterior importe.
