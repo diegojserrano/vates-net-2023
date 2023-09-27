@@ -24,7 +24,7 @@ class Program
 
     static HashSet<string> PalabrasUnicas(string nombreArchivo)
     {
-        var regex = new Regex("[^a-z ]");
+        Regex regex = new Regex("[^a-z ]");
         var palabras = new HashSet<string>();
 
         using (var archivo = new StreamReader(nombreArchivo))
